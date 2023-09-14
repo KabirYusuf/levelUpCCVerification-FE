@@ -1,0 +1,12 @@
+.input{
+    border: 1px solid green;
+    padding: 10px;
+    font-family: poppins;
+    border-radius: 10px;
+    margin: 10px auto;
+    outline: none;
+}
+
+.input:hover{
+    background-color: rgb(191, 191, 235);
+}
