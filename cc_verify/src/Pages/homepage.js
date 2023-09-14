@@ -2,6 +2,7 @@ import { useState } from "react";
 import InputBox from "../component/InputBox.component";
 import Container from "../component/container.component"
 import "./homepage.css";
+import axios from "axios";
 
 
 const Homepage = () => {
@@ -22,12 +23,20 @@ const Homepage = () => {
            
     }
 
-    const handleSubmit = () => {
+    const handleSubmit =  () => {
+        const cardData = {
+            cardNumber: cardNumber,
+            cardType: cardType,
+            cvv: cvv,
+            date: date
 
-        console.log(cardNumber)
-        console.log(cardType)
-        console.log(cvv)
-        console.log(date)
+        }
+
+         axios.post("http://127.0.0.1:8080/api/v1/card/verify", cardData)
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
+
+      
 
         alert("submitted")
     }
