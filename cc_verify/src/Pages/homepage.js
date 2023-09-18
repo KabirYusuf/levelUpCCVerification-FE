@@ -3,6 +3,8 @@ import InputBox from "../component/InputBox.component";
 import Container from "../component/container.component"
 import "./homepage.css";
 import axios from "axios";
+import {FaTimesCircle, FaCheckCircle} from "react-icons/fa";
+
 
 
 
@@ -47,12 +49,29 @@ const Homepage = () => {
         
 
     }
+    const renderIcon = ()=>{
+        if (response.data === 'Card Validity: true') {
+            return(
+                <h1 >
+                    <FaCheckCircle style={{ color: 'green', fontSize: '50px', marginLeft: '40%'}}/>
+                </h1>
+            )
+        }
+        else{
+            return(
+                <h1>
+                    <FaTimesCircle style={{ color: 'red', fontSize: '50px', marginLeft: '40%'}}/>
+                </h1>
+            )
+        }
+    }
 
     const renderResponse = () => {
         
     if (response && response.successfulRequest !== undefined) {
         return (
             <div>
+                {renderIcon()}
                 <p>Is Request Successful: {response.successfulRequest.toString()}</p>
                 <p>{response.data}</p>
             </div>
@@ -75,7 +94,7 @@ const Homepage = () => {
                 <InputBox max={3} min={3} name="cvv" value={cvv} placeholder={"cvv"} size="95%" handleChange={ (e) => handleChange(e)} />
                 </div>
                 <InputBox max={19} min={16} name="cardNumber" value={cardNumber} placeholder={"card number"} size="95%" handleChange={ (e) => handleChange(e)} />
-        
+                
                 <button className="button" type="submit">Validate</button>
             </form>
             {renderResponse()}
