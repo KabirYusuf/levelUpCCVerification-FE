@@ -50,7 +50,7 @@ const Homepage = () => {
 
     }
     const renderIcon = ()=>{
-        if (response.data === 'Card Validity: true') {
+        if (response.data === 'Is card valid? : true') {
             return(
                 <h1 >
                     <FaCheckCircle style={{ color: 'green', fontSize: '50px', marginLeft: '40%'}}/>
