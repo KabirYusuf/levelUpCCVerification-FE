@@ -19,19 +19,17 @@ This Credit Card Verification System Frontend Application is a web application d
 
 ### Clone the Repository
 
-To get started, clone this repository to your local machine using the following command:
-Run the command below on your terminal
+To get started, clone this repository to your local machine using the following command on you terminal:
+
 git clone https://github.com/KabirYusuf/levelUpCCVerification-FE.git
 
 ### Install Dependencies
-Navigate to the project directory and install the necessary dependencies:
-Run the commands below:
+Navigate to the project directory and install the necessary dependencies using the commands below:
 cd cc_verify
 npm install
 
 ### Running the Application
-Start the React application on your local development server:
-Run the command below:
+Start the React application on your local development server using the command below:
 npm start
 
 The application will be available at http://localhost:3000 in your web browser.
