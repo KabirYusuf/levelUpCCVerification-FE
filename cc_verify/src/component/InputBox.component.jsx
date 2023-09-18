@@ -1,12 +1,15 @@
 import "./InputBox.styles.css";
 
-const InputBox = ({type, name, value, handleChange, size, placeholder}) => {
+const InputBox = ({type, name, value, handleChange, size, placeholder , max, min}) => {
 
 
     return (
         <div>
             <input 
             placeholder={placeholder}
+            required
+            maxLength={max}
+            minLength={min}
             label="name"
             type={type} 
             name={name} 
