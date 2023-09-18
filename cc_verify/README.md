@@ -45,11 +45,11 @@ The application provides a user-friendly interface for verifying credit card inf
 ## Input Fields
 The application has three input fields:
 
-- Expiry Date: Enter the expiry date in the format mm/yy. Both the month and year must be two-digit numbers. The field accepts only digits, with no spaces or special characters.
+- Expiry Date (Required Field): Enter the expiry date in the format mm/yy. Both the month and year must be two-digit numbers. The field accepts only digits, with no spaces or special characters.
 
-- CVV: Enter the CVV (Card Verification Value), which must be a three-digit number. The field accepts only digits, with no spaces or special characters.
+- CVV (Required Field): Enter the CVV (Card Verification Value), which must be a three-digit number. The field accepts only digits, with no spaces or special characters.
 
-- Card Number (PAN): Enter the card number, which must be a minimum of 16 characters and a maximum of 19 characters. The field accepts only digits, with no spaces or special characters.
+- Card Number (PAN) (Required Field): Enter the card number, which must be a minimum of 16 characters and a maximum of 19 characters. The field accepts only digits, with no spaces or special characters.
 
 ## Supported Card Types
 The application supports the validation of the following card types:
