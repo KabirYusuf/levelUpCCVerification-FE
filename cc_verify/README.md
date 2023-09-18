@@ -1,6 +1,6 @@
 # Credit Card Verification System Frontend
 
-This Credit Card Verification System Frontend Application is a web application designed by Yusuf Kabir Adekunle. It is built using HTML, CSS, JavaScript, and React. The application communicates with a backend server by making API calls to verify the validity of credit cards.
+This Credit Card Verification System Frontend Application is a web application designed by Yusuf Kabir Adekunle, email: kabiryusuf2307@gmail.com. It is built using HTML, CSS, JavaScript, and React. The application communicates with a backend server by making API calls to verify the validity of credit cards.
 
 **Node.js Version:** v16.17.1
 
