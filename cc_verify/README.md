@@ -24,12 +24,12 @@ To get started, clone this repository to your local machine using the following 
 ```bash
 git clone https://github.com/KabirYusuf/levelUpCCVerification-FE.git
 
-Install Dependencies
+### Install Dependencies
 Navigate to the project directory and install the necessary dependencies:
 cd cc_verify
 npm install
 
-Running the Application
+### Running the Application
 Start the React application on your local development server:
 npm start
 
